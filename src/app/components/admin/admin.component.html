@@ -16,7 +16,7 @@
         {{candidate.prefix}}
       </td>
       <td>
-        {{candidate.firstName}}
+        <a [routerLink] = "['/admin/view', candidate.candidateId]">{{candidate.firstName}}</a>
       </td>
       <td>
         {{candidate.middleName}}
