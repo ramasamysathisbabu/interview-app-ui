@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="table table-bordered table-inverse">
+    <tr>
+      <th>Candidate Id</th>
+      <th>Prefix</th>
+      <th>First Name</th>
+      <th>Middle Name</th>
+      <th>Last Name</th>
+      <th class="text-right">Phone Number</th>
+    </tr>
+    <tr *ngFor="let candidate of candidateResponse">
+      <td>
+        {{candidate.candidateId}}
+      </td>
+      <td>
+        {{candidate.prefix}}
+      </td>
+      <td>
+        {{candidate.firstName}}
+      </td>
+      <td>
+        {{candidate.middleName}}
+      </td>
+      <td>
+        {{candidate.lastName}}
+      </td>
+      <td class="text-right">
+        {{candidate.phoneNumber}}
+      </td>
+    </tr>
+  </table>
+</div>

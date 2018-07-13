@@ -1,0 +1,28 @@
+<div class="container">
+  <form [formGroup]="candidateForm" (ngSubmit)="submitRegistration()" novalidate>
+    <div *ngIf="validMessage != ''">
+      <h3 class="has-info">{{validMessage}}</h3>
+    </div>
+    <div class="form-group">
+      <label>Prefix</label>
+      <input type="text" class="form-control" formControlName="prefix" required autofocus/>
+    </div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text" class="form-control" formControlName="firstName" required/>
+    </div>
+    <div class="form-group">
+      <label>Middle Name</label>
+      <input type="text" class="form-control" formControlName="middleName" required/>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text" class="form-control" formControlName="lastName" required/>
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="text" class="form-control" formControlName="phoneNumber" required/>
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+  </form>
+</div>
